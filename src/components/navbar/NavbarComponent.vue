@@ -4,7 +4,15 @@
 			<div class="row">
 				<div class="col-sm-12 col-md-3 col-lg-3 mt-3  navbar-title">
 					<span>
-						<router-link :to="{ name: 'Home'}">APP</router-link>
+						<router-link :to="{ name: 'Home'}">
+							<b-img
+								:src="require('../../assets/logo_small.svg')"
+								alt="App_Icon"
+								fluid
+								center
+								width='100'
+							></b-img>
+						</router-link>
 					</span>
 				</div>
 			</div>
@@ -98,6 +106,11 @@
 		align-items: center;
 		justify-content: center;
 		cursor: pointer;
+		-moz-user-select: none; /* Firefox */
+		-ms-user-select: none; /* Internet Explorer */
+		-khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+		-webkit-user-select: none; /* Chrome, Safari, and Opera */
+		-webkit-touch-callout: none; /* Disable Android and iOS callouts*/
 	}
 	.navbar-button:hover {
 		background-color: #007c9c;
@@ -120,3 +133,4 @@
 		cursor: pointer;
 	}
 </style>
+
