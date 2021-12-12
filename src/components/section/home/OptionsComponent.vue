@@ -77,6 +77,7 @@
 					<OptionButton
 						title="Informate y entiende como funciona una enfermedad"
 						svg="logo_option_7"
+						page="Indicadores"
 					/>
 
 				</b-col>
