@@ -22,7 +22,7 @@
 				</div>
 				<div class="col-sm-12 col-md-3 col-lg-3 mt-3 navbar-route">
 					<span>
-						<router-link :to="{ name: 'Home'}">Acerca de Nosotros</router-link>
+						<router-link :to="{ name: 'AboutUs'}">Acerca de Nosotros</router-link>
 					</span>
 				</div>
 				<div class="col-sm-12 col-md-3 col-lg-3 mt-3 navbar-route">
