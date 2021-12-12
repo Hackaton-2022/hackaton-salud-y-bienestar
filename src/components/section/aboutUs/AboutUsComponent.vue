@@ -26,7 +26,7 @@
           <b-card-body title="Juan Garcia">
             <b-card-text> Desarrollador web </b-card-text>
           </b-card-body>
-          <b-button href="https://www.linkedin.com/" variant="primary">Linkedin</b-button>
+          <b-button href="https://www.linkedin.com/in/juan-jos%C3%A9-garcia-pinz%C3%B3n-060ab11b6/" variant="primary">Linkedin</b-button>
         </b-card>
       </b-col>
       <b-col>
