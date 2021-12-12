@@ -85,9 +85,10 @@
 					md="3"
 				>
 					<OptionButton
-						title="Registra tus examenes medicos"
-						description="Puedes tener almacenados tus registros medicos, y comparar con registros anteriores."
+						title="Informacion acerca de tu corazon"
+						description="Conoce informacion acerca de tu corazon gracias a nuestra IA."
 						svg="logo_option_8"
+						page="Heart"
 					/>
 				</b-col>
 			</b-row>
