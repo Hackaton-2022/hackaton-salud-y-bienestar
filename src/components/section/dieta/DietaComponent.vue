@@ -5,24 +5,28 @@
 			<b-col
 				cols="12"
 				md="3"
+				@click="subirHandler"
 			>
 				<OptionButton
 					title="Subir de peso"
 					svg="logo_option_4"
+					page="Dieta"
 				/>
 			</b-col>
 			<b-col
 				cols="12"
 				md="3"
+				@click="bajarHandler"
 			>
 				<OptionButton
 					title="Bajar de peso"
 					svg="logo_option_4"
+					page="Dieta"
 				/>
 			</b-col>
 		</b-row>
 
-		<div>
+		<div v-if="subir===true">
 			<FoodComponent
 				align="right"
 				tipo="Desayuno"
@@ -64,6 +68,56 @@
 			/>
 		</div>
 
+		<div v-else-if="bajar===true">
+			<FoodComponent
+				align="right"
+				tipo="Desayuno"
+				imagen="desayuno"
+				comida1="1 taza de cafe con leche descremada"
+				comida2="2 tostadas integrales"
+			/>
+			<FoodComponent
+				align="right"
+				tipo="Merienda de la mañana"
+				imagen="merienda_mañana"
+				comida1="1 manzana"
+			/>
+			<FoodComponent
+				align="right"
+				tipo="Almuerzo"
+				imagen="almuerzo"
+				comida1="1 taza de crema de ahuyama"
+				comida2="1 porcion pechuga asada"
+				comida3="1 papa al horno"
+			/>
+			<FoodComponent
+				align="right"
+				tipo="Merienda de la tarde"
+				imagen="merienda_tarde"
+				comida1="1 Banano"
+			/>
+			<FoodComponent
+				align="right"
+				tipo="Cena"
+				imagen="cena"
+				comida1="1 porcion de ensalada verde (lechuga, pepino, tomate)"
+				comida2="1 porcion de arroz integral"
+				comida3="1 porcion atun asado"
+			/>
+		</div>
+
+		<div v-else-if="informacion===true">
+			<h2>Tu dieta a un solo click</h2>
+			<div class="col-7 mt-5 mb-5 mx-auto d-none d-md-block">
+				<b-img
+					:src="require('../../../assets/food.svg')"
+					alt="Map"
+					fluid
+					width='400'
+				></b-img>
+			</div>
+		</div>
+
 	</div>
 
 </template>
@@ -75,12 +129,32 @@
 		components: {
 			OptionButton,
 			FoodComponent
+		},
+		data() {
+			return {
+				bajar: false,
+				subir: false,
+				informacion: true
+			}
+		},
+		methods: {
+			subirHandler() {
+				this.informacion = false;
+				this.bajar = false
+				this.subir = true;
+			},
+			bajarHandler() {
+				this.informacion = false;
+				this.subir = false;
+				this.bajar = true;
+			}
 		}
 	}
 </script>
 
 <style scoped>
-	h1 {
+	h1,
+	h2 {
 		color: #0c5190;
 		font-weight: bold;
 	}
