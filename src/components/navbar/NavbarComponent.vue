@@ -15,8 +15,24 @@
 						</router-link>
 					</span>
 				</div>
+				<div class="col-sm-12 col-md-3 col-lg-3 mt-3 navbar-route">
+					<span>
+						<router-link :to="{ name: 'Home'}">Inicio</router-link>
+					</span>
+				</div>
+				<div class="col-sm-12 col-md-3 col-lg-3 mt-3 navbar-route">
+					<span>
+						<router-link :to="{ name: 'Home'}">Acerca de Nosotros</router-link>
+					</span>
+				</div>
+				<div class="col-sm-12 col-md-3 col-lg-3 mt-3 navbar-route">
+					<span>
+						<router-link :to="{ name: 'Home'}">Contacto</router-link>
+					</span>
+				</div>
 			</div>
 		</div>
+
 		<div
 			class="col-sm-12 col-md-4 mt-3"
 			v-if="isLoged"
@@ -91,6 +107,7 @@
 	.navbar-route span a {
 		text-decoration: none;
 		color: black;
+		font-weight: bold;
 	}
 	.navbar-route span a:hover {
 		text-decoration: none;
