@@ -42,6 +42,12 @@ const routes = [
     name: 'Heart',
     component: () => import(/* webpackChunkName: "heart" */ '../views/Heart/Heart.vue')
   },
+  ,
+  {
+    path: '/indicadores',
+    name: 'Indicadores',
+    component: () => import(/* webpackChunkName: "indicadores" */ '../views/indicadores/IndicadoresView.vue')
+  },
   {
     path: '/:pathMatch(.*)*',
     component: () => import(
