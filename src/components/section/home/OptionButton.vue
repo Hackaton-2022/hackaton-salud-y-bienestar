@@ -1,18 +1,20 @@
 <template>
 	<div class="button-container">
-		<div>
-			<b-img
-				:src="require('../../../assets/comidas_button.svg')"
-				alt="App_Icon"
-				fluid
-				center
-				width='80'
-			></b-img>
-		</div>
-		<div class="mt-3">
-			<h5>{{title}}</h5>
-			<div>{{description}}</div>
-		</div>
+		<router-link :to="{ name: `${page}`}">
+			<div>
+				<b-img
+					:src="require(`../../../assets/${svg}.svg`)"
+					alt="App_Icon"
+					fluid
+					center
+					width='80'
+				></b-img>
+			</div>
+			<div class="mt-3">
+				<h5>{{title}}</h5>
+				<div>{{description}}</div>
+			</div>
+		</router-link>
 	</div>
 </template>
 
@@ -20,7 +22,9 @@
 	export default {
 		props: {
 			title: String,
-			description: String
+			description: String,
+			svg: String,
+			page: String
 		}
 
 	}
@@ -45,6 +49,11 @@
 		-khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
 		-webkit-user-select: none; /* Chrome, Safari, and Opera */
 		-webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+	}
+
+	.button-container a {
+		text-decoration: none;
+		color: #0c5190;
 	}
 
 	.button-container:hover {
