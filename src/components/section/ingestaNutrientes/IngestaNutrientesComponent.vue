@@ -69,7 +69,59 @@
 		</div>
 
 		<div class="col-12 mt-5 pt-3 pb-3 indice">
-			<h2>Su indice de masa corporal es de <strong>20</strong></h2>
+			<div>
+				<b-table-simple
+					hover
+					small
+					caption-top
+					responsive
+				>
+					<caption>* Los valores mostrados corresponden a cantidades optimas diarias proporcionadas por la OMS.</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<b-thead head-variant="dark">
+						<b-tr>
+							<b-th colspan="1">Calorias*</b-th>
+							<b-th colspan="1">Proteinas*</b-th>
+							<b-th colspan="3">Minerales*</b-th>
+							<b-th colspan="3">Vitaminas*</b-th>
+						</b-tr>
+						<b-tr>
+							<b-th></b-th>
+							<b-th></b-th>
+							<b-th>Calcio</b-th>
+							<b-th>Hierro</b-th>
+							<b-th>Zinc</b-th>
+							<b-th>Vitamina A</b-th>
+							<b-th>Vitamina C</b-th>
+							<b-th>Folato</b-th>
+						</b-tr>
+					</b-thead>
+					<b-tbody>
+						<b-tr>
+							<b-th>2000 kcal</b-th>
+							<b-th>20g</b-th>
+							<b-td>56</b-td>
+							<b-td>22</b-td>
+							<b-td>43</b-td>
+							<b-td>72</b-td>
+							<b-td>23</b-td>
+							<b-td>23</b-td>
+						</b-tr>
+					</b-tbody>
+				</b-table-simple>
+			</div>
 		</div>
 	</div>
 </template>
