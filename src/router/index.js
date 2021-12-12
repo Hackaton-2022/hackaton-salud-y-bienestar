@@ -38,6 +38,11 @@ const routes = [
     component: () => import(/* webpackChunkName: "nutrientes" */ '../views/IngestaNutrientes/IngestaNutrientes.vue')
   },
   {
+    path: '/heart',
+    name: 'Heart',
+    component: () => import(/* webpackChunkName: "heart" */ '../views/Heart/Heart.vue')
+  },
+  {
     path: '/:pathMatch(.*)*',
     component: () => import(
       /* webpackChunkName: "NotFoundPage"*/
