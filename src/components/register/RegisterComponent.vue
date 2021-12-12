@@ -244,9 +244,14 @@
 			}
 		},
 		methods: {
-			register() {
-				const data = this.validateData()
-				console.log(data);
+			async register() {
+				const body = this.validateData()
+				try {
+					const { data } = axios.post('https://user-api-salud-app.herokuapp.com//api/users/create/', body)
+
+				} catch (error) {
+
+				}
 			},
 			validateData() {
 				const data = {
