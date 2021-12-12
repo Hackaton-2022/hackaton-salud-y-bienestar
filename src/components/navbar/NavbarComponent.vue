@@ -69,7 +69,7 @@
 					<router-link :to="{ name: 'Login'}">Iniciar Sesion</router-link>
 				</div>
 				<div class="col-sm-12 col-md-5 col-lg-4 offset-md-1 offset-lg-2 navbar-button mt-3">
-					<router-link :to="{ name: 'CreateUser'}">Registro</router-link>
+					<router-link :to="{ name: 'Register'}">Registro</router-link>
 				</div>
 			</div>
 		</div>
