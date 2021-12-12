@@ -46,6 +46,7 @@
 						title="Actividades en tu zona"
 						description="Enterate de las actividades perfectas en la zona e inscribete"
 						svg="logo_option_4"
+						page="Actividades"
 					/>
 				</b-col>
 				<b-col
@@ -66,6 +67,7 @@
 						title="Listado de especialistas"
 						description="Accede a un especialista capacitado, y adecuado para tus necesidades"
 						svg="logo_option_6"
+						page="Especialistas"
 					/>
 				</b-col>
 			</b-row>

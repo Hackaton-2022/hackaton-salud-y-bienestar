@@ -27,7 +27,7 @@
 		</b-row>
 
 		<form @submit.prevent="calc">
-			<div class="col-10 mx-auto formulario">
+			<div class="col-10 mx-auto formulario mb-5">
 				<h2 class="mb-5">Ingresa tus datos</h2>
 				<b-row align-h="around">
 					<b-col
