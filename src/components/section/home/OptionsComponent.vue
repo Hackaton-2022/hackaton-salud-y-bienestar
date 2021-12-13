@@ -54,9 +54,10 @@
 					md="3"
 				>
 					<OptionButton
-						title="Recordatorio medico"
-						description="Recibe alertas para agendar citas de control periodicamente y sobre tus proximas citas medicas"
+						title="Nutrientes"
+						description="Encuentra una lista de alimentos para que compares los nutrientes"
 						svg="logo_option_5"
+						page="Alimentos"
 					/>
 				</b-col>
 				<b-col

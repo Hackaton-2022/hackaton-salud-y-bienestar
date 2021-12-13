@@ -53,13 +53,28 @@ const routes = [
     component: () => import(/* webpackChunkName: "alimentos" */ '../views/Alimentos/AlimentosView.vue')
   },
   {
-    name: 'AboutUs',
+    path: '/actividades',
+    name: 'Actividades',
+    component: () => import(/* webpackChunkName: "actividades" */ '../views/Actividades/ActividadesView.vue')
+  },
+  {
+    path: '/especialistas',
+    name: 'Especialistas',
+    component: () => import(/* webpackChunkName: "especialistas" */ '../views/Especialistas/EspecialistasView.vue')
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: () => import(/* webpackChunkName: "about" */ '../views/AboutUs/aboutUsView.vue')
+  },
+  {
     path: '/:pathMatch(.*)*',
     component: () => import(
       /* webpackChunkName: "NotFoundPage"*/
       "../views/NotFound/NotFoundView.vue"
     )
-  },
+  }
+
 ]
 
 const router = new VueRouter({
