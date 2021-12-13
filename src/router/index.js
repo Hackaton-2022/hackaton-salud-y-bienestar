@@ -74,7 +74,6 @@ const routes = [
       "../views/NotFound/NotFoundView.vue"
     )
   }
-
 ]
 
 const router = new VueRouter({

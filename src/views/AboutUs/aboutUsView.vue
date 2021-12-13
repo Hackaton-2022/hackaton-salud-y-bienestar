@@ -5,7 +5,7 @@
 </template>
 
 <script>
-	import AboutUsComponent from '@/components/section/aboutUs/AboutUsComponent.vue'
+	import AboutUsComponent from '../../components/section/AboutUs/AboutUsComponent.vue'
 	export default {
 		name: 'AboutUs',
 		components: {
