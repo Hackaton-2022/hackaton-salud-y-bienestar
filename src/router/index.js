@@ -53,7 +53,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "alimentos" */ '../views/Alimentos/AlimentosView.vue')
   },
   {
-    component: () => import(/* webpackChunkName: "alimentos" */ '../views/AboutUs/aboutUsView.vue')
+    name: 'AboutUs',
     path: '/:pathMatch(.*)*',
     component: () => import(
       /* webpackChunkName: "NotFoundPage"*/
